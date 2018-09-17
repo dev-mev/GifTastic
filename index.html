@@ -11,24 +11,41 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-      <div id="buttons-view"></div>
-
-      <form class="form-inline">
-        <label for="exampleFormControlInput1">Add a legendary leading lady:&nbsp;</label>
-        <input type="text" class="form-control mb-2 mr-sm-2" id="add-leading-lady">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Legendary Leading Ladies</h1>
+          <p class="lead">Click a button below to see some glamorous leading ladies of Old Hollywood or add a dame of your own!</p>
+          <hr class="my-4">
+            <form class="form-inline">
+              <div class="form-group mb-2">
+                <label for="staticEmail2" class="lead">Who would you like to see?</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="add-dame" required="true">
+              </div>
+              <button type="submit" id="submit-button" class="btn btn-primary mb-2">Submit</button>
+            </form>
         </div>
-      
-        <button type="submit" id="submit-button" class="btn btn-primary mb-2">Submit</button>
-      </form>
+      </div>
 
-      <div id="gif-view"></div>
+      <div id="gif-container" class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="buttons-view"></div>
+          </div>
+        </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="assets/javascript/app.js"></script>
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="gif-view"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+      <script src="assets/javascript/app.js"></script>
   </body>
 </html>

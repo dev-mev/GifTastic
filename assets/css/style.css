@@ -1,10 +1,59 @@
-.topic-button{
+body{
+  background-image: url("../images/422.jpg");
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
 
+.jumbotron{
+  background-color: black;
+}
+
+hr{
+  background-color: white;
+}
+
+#gif-container{
+  padding-top: 20px;
+  padding-left: 50px;
+  background-color: black;
+}
+
+.topic-button{
+background: black;
+color: white;
+margin: 0 5px 20px 0;
+}
+
+#submit-button{
+  background-color: darkred;
+  border-color: gray;
+}
+
+#add-dame{
+  margin-top: 9px;
+  margin-left: 5px;
+}
+
+#submit-button:hover{
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: rgb(173, 62, 62)
 }
 
 .topic-button:hover{
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   background-color: gray;
   color: white;
+}
+
+.topic-button:focus, .topic-button.focus, .topic-button:active, .topic-button.active{
+  outline-color: darkred;
+  background-color: gray;
+}
+
+.gif{
+  float: left;
+  margin: 10px 10px 20px 0px;
 }
