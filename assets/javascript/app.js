@@ -32,7 +32,7 @@ function renderNewButton(topic){
 // Function for retrieving JSON content from the GIPHY API
 function callGiphy() {
     var search = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + encodeURIComponent(search) + "&api_key=caRg3WZm2q4HA0mBSohCihWnaI5DcBMv&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + encodeURIComponent(search) + "&api_key=caRg3WZm2q4HA0mBSohCihWnaI5DcBMv&limit=10";
         
     $.ajax({
         url: queryURL,
